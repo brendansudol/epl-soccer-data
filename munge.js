@@ -49,7 +49,7 @@ function parse_games() {
     for (var i = f2.length - 1; i > 0; i--) {
         if (f14[i] == 1) {
             var entry = game_details(i);
-                entry_str = season + "|" + entry.join("|") + "\n";
+                entry_str = season + "\t" + entry.join("\t") + "\n";
 
             fs.write(output_file, entry_str, "a");
         }    
@@ -85,9 +85,10 @@ function scorers(num, away) {
 
     for (i = 1; i < sname.length; i++) {
         if (ret !== "") ret = ret + ";";
-        ret = ret + n_p[sname[i]] + "-" + stime[i] + "-" + score_type(stype[i]);
+        ret = ret + n_p[sname[i]] + "," + stime[i] + "," + score_type(stype[i]);
     }
 
+    if (ret === "") ret = "NULL";
     return ret;
 }
 
