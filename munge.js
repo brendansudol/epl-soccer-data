@@ -11,7 +11,7 @@ function parse_seasons(start_year, end_year) {
     // output columns to a file
     var columns = ["season", "date", "home_team", "home_score", "home_scorers",
                    "away_team", "away_score", "away_scorers", "venue"];
-    fs.write("data-out/columns.tsv", columns.join("|"), "w");
+    fs.write("data-out/columns.tsv", columns.join("\t"), "w");
 
     // loop through & parse seasons
     for (var year = start_year; year <= end_year; year++) {
