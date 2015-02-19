@@ -1,4 +1,5 @@
-season	date	home_team	home_score	home_scorers	away_team	away_score	away_scorers	venue2001-2002	2002-06-11	Blackburn Rovers	3	Andy Cole,53,g;Damien Duff,66,g;Andy Cole,81,g	Fulham	0	NULL	Ewood Park
+season	date	home_team	home_score	home_scorers	away_team	away_score	away_scorers	venue
+2001-2002	2002-06-11	Blackburn Rovers	3	Andy Cole,53,g;Damien Duff,66,g;Andy Cole,81,g	Fulham	0	NULL	Ewood Park
 2001-2002	2002-06-11	Leicester City	2	Paul Dickov,60,g;Matthew Piper,71,g	Tottenham Hotspur	1	Teddy Sheringham,54,g	Filbert Street
 2001-2002	2002-06-11	Liverpool	5	John Arne Riise,13,g;John Arne Riise,35,g;Nicolas Anelka,46,g;Vladimir Smicer,57,g;Nicolas Anelka,88,g	Ipswich Town	0	NULL	Anfield
 2001-2002	2002-06-11	West Ham United	2	Steve Lomas,45,g;Ian Pearce,89,g	Bolton Wanderers	1	Youri Djorkaeff,67,g	Upton Park
