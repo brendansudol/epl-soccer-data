@@ -1,5 +1,12 @@
-parsing and cleaning english premier league match data
+english premier league match data (with goal info)
 
-there is already a great EPL dataset with HT and FT scores here (https://github.com/footballcsv/en-england)
+there is already a great EPL dataset with HT and FT scores here:
+https://github.com/footballcsv/en-england
 
-the main thing this new dataset adds is goal details for each match (who scored, what time, and type of goal)
+the main thing this dataset adds is information about the goals scored during a match (who scored, what time, and type of goal)
+
+------
+
+this dataset was compiled by reverse engineering how soccerbot.com creates their season summary pages (i.e., http://soccerbot.com/fa/results/ukprem2013x.htm), which is pretty crazy btw - match data is obfuscated in a javascript file across 20+ arrays with names such as 'n_v' and 'f8' (see one of the data input files) which is then parsed and formatted as a table and added to the page client side.
+
+the 'munge.js' script (run via phantomjs) is my attempt to parse these crazy data input files and output the cleaned results go a TSV. 
