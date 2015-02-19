@@ -1,0 +1,5 @@
+parsing and cleaning english premier league match data
+
+there is already a great EPL dataset with HT and FT scores here (https://github.com/footballcsv/en-england)
+
+the main thing this new dataset adds is goal details for each match (who scored, what time, and type of goal)
