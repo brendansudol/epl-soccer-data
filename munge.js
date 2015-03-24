@@ -11,13 +11,13 @@ function parse_seasons(start_year, end_year) {
     // output columns to a file
     var columns = ["season", "date", "home_team", "home_score", "home_scorers",
                    "away_team", "away_score", "away_scorers", "venue"];
-    fs.write("data-out/columns.tsv", columns.join("\t") + "\n", "w");
+    fs.write("data-raw-cleaned/columns.tsv", columns.join("\t") + "\n", "w");
 
     // loop through & parse seasons
     for (var year = start_year; year <= end_year; year++) {
         season = (year - 1) + '-' + year;
-        input_file = 'data-in/ukprem' + year + '-db.js';
-        output_file = 'data-out/' + year + '.tsv';
+        input_file = 'data-raw/ukprem' + year + '-db.js';
+        output_file = 'data-raw-cleaned/' + year + '.tsv';
 
         // get data vars from input js file
         var page = webPage.create();
